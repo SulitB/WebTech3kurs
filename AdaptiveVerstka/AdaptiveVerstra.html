@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        @media (min-width: 768px){
+                .Pfooter{
+                    display: flex;  
+                }
+                .footer{
+                flex: 1;
+                }
+                .main{
+                    display: flex;
+                }
+        }
+        @media (max-width: 767px){
+                .sidebar{
+                    display: flex; 
+                }
+                
+                
+                
+        }
+        
+        .centered{
+            background-color: aquamarine;
+            opacity: 0.8;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 100px;
+            width: 100px; 
+        }
+        .linesidebar{
+            background-color: yellow;
+            flex: 1;
+            margin: 6px;
+        }
+        .sidebar{
+            background-color:blue;
+            border: 1px solid blue;
+            min-width: 200px;
+        }
+        .footer{
+                height: 70px;
+                }
+        body{
+            max-width: 1200px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="height: 50px; background-color: aqua; ">HEADER</div>
+    <div class="main">
+        <div class="sidebar" >
+            <div class="linesidebar">Line1Line1 Line1Line1</div>
+            <div class="linesidebar">Line2Line2 Line2Line2</div>
+            <div class="linesidebar">Line3 Line3Line3</div>
+            <div class="linesidebar">Line4Line4 Line4</div>
+            <div class="linesidebar">Line5</div>
+        </div>
+        <div style="position: relative;">
+            <div class="centered">Centered</div> 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis minus totam illo, in nesciunt sit impedit fuga quasi eius vitae suscipit, repellat facilis, animi cupiditate? Error, quaerat quia et minus voluptates modi asperiores quisquam natus iusto voluptas esse magni soluta mollitia id repudiandae illo, explicabo iure possimus ducimus non optio! Optio dolorum placeat hic dignissimos eaque! Maxime quia asperiores hic, impedit exercitationem molestiae! Officia, architecto quo non et dolore quaerat provident dignissimos ex dicta illo nulla at ipsum, eaque necessitatibus vitae quod molestias omnis eius asperiores. A dignissimos excepturi laboriosam voluptatum nesciunt unde neque! Voluptatibus repudiandae in repellat qui laboriosam?
+        </div>
+    </div>
+    <div class="Pfooter">
+        <div class="footer" style="background-color: darkgreen;">Box-1</div>
+        <div class="footer" style="background-color: rgb(96, 151, 0);">Box-2</div>
+        <div class="footer" style="background-color: rgb(26, 196, 26);">Box-3</div>
+    </div>
+</body>   
+</html> 
